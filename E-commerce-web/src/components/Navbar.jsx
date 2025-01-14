@@ -2,7 +2,54 @@ import React from "react";
 import design from "../assets/design.png";
 import { IoMdSearch } from "react-icons/io";
 import { FaCartShopping } from "react-icons/fa6";
-import DarkMode  from "./DarkMode";
+import { FaCaretDown } from "react-icons/fa";
+import DarkMode from "./DarkMode";
+
+const Menu = [
+  {
+    id: 1,
+    name: "Home",
+    link: "/#",
+  },
+  {
+    id: 2,
+    name: "Top Rated",
+    link: "/#services",
+  },
+  {
+    id: 3,
+    name: "Kids Wear",
+    link: "/#",
+  },
+  {
+    id: 3,
+    name: "Mens Wear",
+    link: "/#",
+  },
+  {
+    id: 3,
+    name: "Electronics",
+    link: "/#",
+  },
+];
+
+const DropdownLinks = [
+  {
+     id: 1,
+    name: "Trending Products",
+    link: "/#"
+  },
+  {
+    id: 2,
+    name: "Best Selling ",
+    link: "/#"
+  },
+  {
+    id: 3,
+    name: "Top Rated",
+    link: "/#"
+  }
+]
 
 const Navbar = () => {
   return (
@@ -45,7 +92,9 @@ const Navbar = () => {
                  duration-300 rounded-full border
                  border-gray-300 px-2 py-1 
                  focus:outline-none focus:border-1
-                 focus:border-primary "
+                 focus:border-primary
+                 dark:border-gray-500 
+                 dark:bg-gray-800 "
               />
               <IoMdSearch
                 className="text-gray-500 
@@ -75,13 +124,51 @@ const Navbar = () => {
             />
           </button>
           {/* DarkMode Switch  */}
-           <div>
+          <div>
             <DarkMode />
-           </div>
+          </div>
         </div>
       </div>
-      {/*  Lower Navbar */}
-      <div></div>
+      <div className="flex justify-center bg-white dark:bg-black dark:text-white">
+  <ul className="flex items-center gap-6 list-none m-0 p-4 text-black dark:text-white">
+    {Menu.map((data) => (
+      <li key={data.id}>
+        <a
+          href={data.link}
+          className="inline-block px-4 py-2 hover:text-primary duration-200"
+        >
+          {data.name}
+        </a>
+      </li>
+    ))}
+    {/* Simple dropdown and links */}
+    <li className="group relative cursor-pointer">
+      <a href="#" className="flex items-center gap-[2px] py-2">
+        Trending Products
+        <span>
+          <FaCaretDown
+            className="tranistion-all duration-200 group-hover:rotate-180"
+          />
+        </span>
+      </a>
+      <div className="absolute z-[9999] hidden group-hover:block w-[150px] rounded-md bg-white dark:bg-black p-2 text-black dark:text-white shadow-md">
+        <ul>
+          {DropdownLinks.map((data) => (
+            <li key={data.id}>
+              <a
+                href={data.link}
+                className="inline-block w-full rounded-md p-2 hover:bg-primary/20"
+              >
+                {data.name}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </li>
+  </ul>
+</div>
+
     </div>
   );
 };
