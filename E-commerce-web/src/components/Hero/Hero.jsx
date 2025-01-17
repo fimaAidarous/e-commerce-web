@@ -71,15 +71,26 @@ const Hero = () => {
                   sm:text-left order-2 sm:order-1 relative z-10"
                 >
                   <h1
+                  data-aos="zoom-out"
+                  data-aos-duration="500"
+                  data-aos-once="true"
                     className="text-5xl sm:text-6xl 
                   lg:text-7xl font-bold"
                   >
                     {data.title}
                   </h1>
-                  <p className="text-sm">
+                  <p 
+                   data-aos="fade-up"
+                   data-aos-duration="500"
+                   data-aos-delay="100"
+                  className="text-sm">
                     {data.description}
                   </p>
-                  <div>
+                  <div 
+                     data-aos="fade-up"
+                     data-aos-duration="500"
+                     data-aos-delay="300"
+                  >
                     <button
                       className="bg-gradient-to-r 
                      from-primary to-secondary hover:scale-105 
@@ -91,7 +102,10 @@ const Hero = () => {
                 </div>
                 {/* Image section */}
                 <div className="order-1 sm:order-2">
-                  <div className="relative z-10">
+                  <div 
+                    data-aos="zoom-in"
+                    data-aos-once="true"
+                  className="relative z-10">
                     <img
                       src={data.img}
                       alt=""
