@@ -58,9 +58,15 @@ const Products = () => {
           className="text-center mb-10 max-w-[600px]
               mx-auto"
         >
-          <p data-oas="fade-up" className="text-sm text-primary">Top Selling Products for you</p>
-          <h1 data-oas="fade-up" className="text-3xl font-bold">Products</h1>
-          <p data-oas="fade-up" className="text-xs text-gray-400">Lorem ipsum!</p>
+          <p data-oas="fade-up" className="text-sm text-primary">
+            Top Selling Products for you
+          </p>
+          <h1 data-oas="fade-up" className="text-3xl font-bold">
+            Products
+          </h1>
+          <p data-oas="fade-up" className="text-xs text-gray-400">
+            Lorem ipsum!
+          </p>
         </div>
         {/* Body Section */}
         <div>
@@ -81,7 +87,7 @@ const Products = () => {
                   src={data.img}
                   alt=""
                   className="h-[210px] w-[150px] 
-                             object-cover rounded-md"
+                  object-cover rounded-md"
                 />
                 <div>
                   <h3 className="font-semibold">{data.title}</h3>
