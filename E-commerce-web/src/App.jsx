@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero/Hero";
 import Products from "./components/products/Products";
 import TopProducts from "./components/TopProducts/TopProducts";
+import Banner from "./components/Banner/Banner";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -24,6 +25,7 @@ const App = () => {
       <Hero />
       <Products />
       <TopProducts />
+      <Banner />
     </div>
   );
 };
