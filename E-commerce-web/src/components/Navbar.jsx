@@ -1,5 +1,5 @@
 import React from "react";
-import design from "../assets/design.png";
+import design from "../assets/women.png";
 import { IoMdSearch } from "react-icons/io";
 import { FaCartShopping } from "react-icons/fa6";
 import { FaCaretDown } from "react-icons/fa";
