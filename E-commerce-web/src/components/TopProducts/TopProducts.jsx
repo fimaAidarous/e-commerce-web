@@ -40,7 +40,7 @@ const ProductData = [
 const TopProducts = ({handleOrderPopup}) => {
   return (
     <div>
-        <div className='container'>
+        <div id="TopProducts" className='container'>
            {/* header section */}
            <div
           className="text-left mb-24"

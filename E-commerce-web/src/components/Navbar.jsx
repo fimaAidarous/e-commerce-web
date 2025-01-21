@@ -13,22 +13,22 @@ const Menu = [
   },
   {
     id: 2,
-    name: "Top Rated",
+    name: "Hand Bags",
     link: "/#services",
   },
   {
     id: 3,
-    name: "Kids Wear",
+    name: "Watches Both Men & Women",
     link: "/#",
   },
   {
     id: 3,
-    name: "Mens Wear",
+    name: "Jacket Both Women & Men",
     link: "/#",
   },
   {
     id: 3,
-    name: "Electronics",
+    name: "Shoes Women",
     link: "/#",
   },
 ];

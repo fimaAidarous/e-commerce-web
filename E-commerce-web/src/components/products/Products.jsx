@@ -1,8 +1,8 @@
 import React from "react";
-import image1 from "../../assets/Products/shoes for women new styles ladies shoe.png";
+import image1 from "../../assets/Winter Flat Shoes Female.png";
 import image2 from "../../assets/Products/thick sole sports sneakers for women.png";
 import image3 from "../../assets/Products/thick sole sports sneakers.png";
-import image4 from "../../assets/Products/Long Coat Windproof Jacket for Men.png";
+import image4 from "../../assets/Winter Coat Black Woo.png";
 import image5 from "../../assets/Products/Jacket with Removable Hooded.png";
 import { FaStar } from "react-icons/fa6";
 
@@ -10,9 +10,9 @@ const ProductsData = [
   {
     id: 1,
     img: image1,
-    title: "korean trendy breathable chunky",
+    title: "Winter Flat Shoes Female",
     rating: 8.0,
-    color: "white",
+    color: "Black",
     aosDelay: "0",
   },
   {
