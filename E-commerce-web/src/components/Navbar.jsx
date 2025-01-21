@@ -51,7 +51,7 @@ const DropdownLinks = [
   }
 ]
 
-const Navbar = () => {
+const Navbar = ( {handleOrderPopup}) => {
   return (
     <div
       className="shadow-lg bg-white
@@ -105,7 +105,7 @@ const Navbar = () => {
           </div>
           {/*  Order Button */}
           <button
-            onClick={() => alert("Ordering not available yet")}
+            onClick={() => handleOrderPopup()}
             className="bg-gradient-to-r from-primary
            to-secondary transition-all duration-200
            text-white py-1 px-4 rounded-full flex 
@@ -129,7 +129,8 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-center bg-white dark:bg-black dark:text-white">
+      {/* lower navbar */}
+      <div data-aos="zoom-in" className="flex justify-center bg-white dark:bg-black dark:text-white">
   <ul className="flex items-center gap-6 list-none m-0 p-4 text-black dark:text-white">
     {Menu.map((data) => (
       <li key={data.id}>
